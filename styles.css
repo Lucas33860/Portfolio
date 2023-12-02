@@ -1,10 +1,20 @@
 header{
-    background-color: #1a1818;
+    background-color: #161515;
     height: 100px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    transition: top 0.3s;
+}
+#content {
+    margin-top: 100px; /* Assurez-vous que le contenu ne soit pas masqué par l'en-tête fixe */
+}
+#site-body.header-hidden #site-header {
+    top: -100px; /* Ajustez cette valeur selon votre hauteur d'en-tête pour le masquer complètement */
+}
+.header-hidden {
+    top: -100px; /* Ajustez cette valeur selon votre hauteur d'en-tête pour le masquer complètement */
 }
 .home{
     display: flex;
@@ -12,9 +22,9 @@ header{
     justify-content: center;
     align-items: center;
     height: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
 }
 header ul li{
     margin : auto;
@@ -31,9 +41,57 @@ header .logo{
 }
 header img{
     height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 section{
-    margin-top: 100px;
-    width: 500px;
-    height: 500px;
+    overflow: hidden;
+    padding: 0 4.75rem;
+    margin-top: 20rem;  
+}
+section .presentation h1{
+    font-size: 3.5rem;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+    margin : 2rem 0;
+}
+section .presentation h2{
+    font-size: 2,5rem;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.button{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.button a:hover{
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
 }
