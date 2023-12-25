@@ -95,3 +95,30 @@ section .presentation h2{
     background-color: #e74c3c;
     border: 1px solid #e74c3c;
 }
+.competences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.competences h1{
+    margin-bottom: 4rem;
+}
+.competences p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    font-size: 20px;
+    text-align: justify;
+}
+.logo-competences{
+    width: 10%;
+    margin-bottom: 50px;
+}
+.logo-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
