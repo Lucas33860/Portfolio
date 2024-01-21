@@ -33,6 +33,7 @@ header ul li{
 header ul li a:hover{
     color: #e74c3c;
     text-decoration: underline;
+    font-size: 24px;
 }
 header .logo{
     float: left;
@@ -47,7 +48,7 @@ header img{
 section{
     overflow: hidden;
     padding: 0 4.75rem;
-    margin-top: 20rem;  
+    margin-top: 10rem;  
 }
 section .presentation h1{
     font-size: 3.5rem;
@@ -94,6 +95,7 @@ section .presentation h2{
 .button a:hover{
     background-color: #e74c3c;
     border: 1px solid #e74c3c;
+    scale: 1.1;
 }
 .competences{
     display: flex;
@@ -110,7 +112,6 @@ section .presentation h2{
     align-items: center;
     width: 75%;
     font-size: 20px;
-    text-align: justify;
 }
 .logo-competences{
     width: 10%;
@@ -121,4 +122,7 @@ section .presentation h2{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.espace{
+    padding-top: 128px;
 }
