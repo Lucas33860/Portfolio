@@ -23,11 +23,12 @@
 .prev{ left: 15px; }
 .next { right: 15px; }
 .prev:hover, .next:hover {
-  background-color: rgba(35, 33, 33, 0.5);
+  background-color: rgba(47, 43, 43, 0.5);
 }
 .slide-text {
   position: absolute;
   color: #ffffff;
+  background-color: rgba(0,0,0,0.5);
   font-size: 15px;
   padding: 15px;
   bottom: 15px;
@@ -41,11 +42,12 @@
   position: absolute;
   top: 0;
 }
-.slide-img{ 
-  height: 300px;
+.slide-img {
   object-fit: cover;
-  object-position: center;
- }
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
 .slide-dot{ text-align: center; }
 .dot {
   cursor: pointer;
@@ -65,4 +67,11 @@
 @keyframes fade {
   from {opacity: 0} 
   to {opacity: 1}
+}
+#site-header {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
