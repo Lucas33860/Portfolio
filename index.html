@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title> <!-- Titre-->
+    <title>Portfolio</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="system.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="carrousel.css">
     <script src="script.js" defer></script>
-    <meta name="description"
-        content="Portofolio de Lucas Juillat étudiant en BUT MMI passioné de développement web et tout ce qui touche aux multimédias">
+    <meta name="description" content="Portofolio de Lucas Juillat étudiant en BUT MMI passioné de développement web et tout ce qui touche aux multimédias">
 </head>
-<header id="site-header"> <!-- Header tout bo tout bo -->
+<header id="site-header">
     <nav>
         <ul>
             <div class="logo">
@@ -64,16 +63,37 @@
         </div>
     </section>
     <section>
-        <h1>Mes Projets</h1>
-        <ul>
-            <li>
-                <div>
-                    <img src="ressources/Projet1.png" alt="Projet 1">
-                    <h2>Projet 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <img src="https://images.pexels.com/photos/1242764/pexels-photo-1242764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
+                        <p>Ceci est la première image.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="ressources/Lucas.jpg" alt="Image 2">
+                        <p>Ceci est la deuxième image.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
+                        <p>Ceci est la troisième image.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 4">
+                        <p>Ceci est la quatrième image.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.pexels.com/photos/3555161/pexels-photo-3555161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 5">
+                        <p>Ceci est la cinquième image.</p>
+                    </div>
                 </div>
-            </li>
-        </ul>
+                <div class="carousel-controls">
+                    <button id="prev">Précédent</button>
+                    <button id="next">Suivant</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
     </section>
     <section>
         <h1>Mon CV</h1>

@@ -1,43 +1,78 @@
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    let siteBody = document.getElementById("site-body");
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let siteBody = document.getElementById("site-body");
 
-    if (scrollTop > lastScrollTop && scrollTop > 500) {
-        // Faites défiler vers le bas et dépassez 500 pixels
-        siteBody.classList.add("header-hidden");
-    } else {
-        // Faites défiler vers le haut ou n'avez pas atteint 500 pixels
-        siteBody.classList.remove("header-hidden");
-    }
+  if (scrollTop > lastScrollTop && scrollTop > 500) {
+    siteBody.classList.add("header-hidden");
+  } else {
+    siteBody.classList.remove("header-hidden");
+  }
 
-    lastScrollTop = scrollTop;
+  lastScrollTop = scrollTop;
 });
 
-var slideIndex = 1;
-showSlides(slideIndex);
+(function () {
+  "use stict"
+  const slideTimeout = 5000;
+  const prev = document.querySelector('#prev');
+  const next = document.querySelector('#next');
+  const $slides = document.querySelectorAll('.slide');
+  let $dots;
+  let intervalId;
+  let currentSlide = 1;
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("custom-slider");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function slideTo(index) {
+    currentSlide = index >= $slides.length || index < 1 ? 0 : index;
+    $slides.forEach($elt => $elt.style.transform = `translateX(-${currentSlide * 100}%)`);
+    $dots.forEach(($elt, key) => $elt.classList = `dot ${key === currentSlide? 'active': 'inactive'}`);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function showSlide() {
+    slideTo(currentSlide);
+    currentSlide++;
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+
+  for (let i = 1; i <= $slides.length; i++) {
+    let dotClass = i == currentSlide ? 'active' : 'inactive';
+    let $dot = `<span data-slidId="${i}" class="dot ${dotClass}"></span>`;
+    document.querySelector('.carousel-dots').innerHTML += $dot;
+  }
+
+  $dots = document.querySelectorAll('.dot');
+
+  $dots.forEach(($elt, key) => $elt.addEventListener('click', () => slideTo(key)));
+
+  prev.addEventListener('click', () => slideTo(--currentSlide))
+  next.addEventListener('click', () => slideTo(++currentSlide))
+
+  intervalId = setInterval(showSlide, slideTimeout)
+
+  $slides.forEach($elt => {
+    let startX;
+    let endX;
+
+    $elt.addEventListener('mouseover', () => {
+      clearInterval(intervalId);
+    }, false)
+
+    $elt.addEventListener('mouseout', () => {
+      intervalId = setInterval(showSlide, slideTimeout);
+    }, false);
+
+    $elt.addEventListener('touchstart', (event) => {
+      startX = event.touches[0].clientX;
+    });
+
+    $elt.addEventListener('touchend', (event) => {
+      endX = event.changedTouches[0].clientX;
+
+      if (startX > endX) {
+        slideTo(currentSlide + 1);
+      } else if (startX < endX) {
+        slideTo(currentSlide - 1);
+      }
+    });
+  })
+})()
