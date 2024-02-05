@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carrousel.css">
     <script src="script.js" defer></script>
-    <meta name="description" content="Portofolio de Lucas Juillat étudiant en BUT MMI passioné de développement web et tout ce qui touche aux multimédias">
+    <meta name="description"
+        content="Portofolio de Lucas Juillat étudiant en BUT MMI passioné de développement web et tout ce qui touche aux multimédias">
 </head>
 <header id="site-header">
     <nav>
@@ -27,6 +29,7 @@
         </ul>
     </nav>
 </header>
+
 <body id="site-body">
     <section class="container">
         <div class="presentation">
@@ -40,7 +43,7 @@
                 savoir plus</a>
         </div>
     </section>
-    <section  id="competences" class="container espace">
+    <section id="competences" class="container espace">
         <div class="logo-flex">
             <img class="logo-competences" src="ressources/html.png" alt="logo html">
             <img class="logo-competences" src="ressources/css.png" alt="logo css">
@@ -63,36 +66,44 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="slide">
-                        <img src="https://images.pexels.com/photos/1242764/pexels-photo-1242764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 1">
-                        <p>Ceci est la première image.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="ressources/Lucas.jpg" alt="Image 2">
-                        <p>Ceci est la deuxième image.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 3">
-                        <p>Ceci est la troisième image.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 4">
-                        <p>Ceci est la quatrième image.</p>
-                    </div>
-                    <div class="slide">
-                        <img src="https://images.pexels.com/photos/3555161/pexels-photo-3555161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image 5">
-                        <p>Ceci est la cinquième image.</p>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button id="prev">Précédent</button>
-                    <button id="next">Suivant</button>
-                </div>
-                <div class="carousel-dots"></div>
+        <h1 class="espace-bas">Compétences de développements et diverses</h1>
+        <div class="slide-container">
+            <div class="custom-slider fade">
+                <div class="slide-index">1 / 5</div>
+                <img class="slide-img" src="ressources/Lucas.jpg">
+                <div class="slide-text">HTML : Bonne maitrise de cette compétence que j'utilise fréquemment</div>
             </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">2 / 5</div>
+                <img class="slide-img" src="ressources/css.png">
+                <div class="slide-text">CSS : Bonne maitrise utilisation fréquente également </div>
+            </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">3 / 5</div>
+                <img class="slide-img" src="ressources/js.png">
+                <div class="slide-text">JS : Connaissance de bases </div>
+            </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">4 / 5</div>
+                <img class="slide-img" src="ressources/php.png">
+                <div class="slide-text">PHP : Maitrise d'un bon nombre de bases</div>
+            </div>
+            <div class="custom-slider fade">
+                <div class="slide-index">5 / 5</div>
+                <img class="slide-img" src="ressources/sql.png">
+                <div class="slide-text">SQL : Matrise correct, bonne compréhension du fonctionnement</div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
     </section>
     <section>
@@ -101,34 +112,10 @@
     </section>
     <section>
         <h1>Contact</h1>
-        <ul>
-            <li>
-                <p>mail : </p>
-            </li>
-        </ul>
-        </form>
     </section>
+
     <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/lucas-juillat-6b1b3b1b9/">Linkedin</a>
-                </li>
-                <li>
-                    <a href="">Instagram</a>"
-                </li>
-                <li>
-                    <a href="">Twitter</a>
-                </li>
-                <li>
-                    <a href="">Github</a>
-                </li>
-                <li>
-                    <a href="">Mail</a>
-                </li>
-            </ul>
-        </div>
-        <p>©2024 Lucas Juillat</p>
+        <p>Lucas Juillat - 2021</p>
     </footer>
 </body>
 
