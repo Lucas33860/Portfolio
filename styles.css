@@ -146,3 +146,23 @@ section .presentation h2{
 .espace-bas{
     padding-bottom: 128px;
 }
+.espace-small-bas{
+    padding-bottom: 64px;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project img{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
