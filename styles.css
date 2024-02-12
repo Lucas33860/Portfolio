@@ -166,3 +166,17 @@ section .presentation h2{
     align-items: center;
     flex-direction: column;
 }
+.scratch h1{
+    text-align: center;
+}
+.scratch p{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.scratch img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 200px;
+    padding-bottom: 50px;
+}
