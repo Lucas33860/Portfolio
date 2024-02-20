@@ -149,6 +149,9 @@ section .presentation h2{
 .espace-small-bas{
     padding-bottom: 64px;
 }
+.projects{
+    margin-top: 100px;
+}
 .project{
     display: flex;
     justify-content: space-between;
