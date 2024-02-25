@@ -7,21 +7,17 @@
   
   .breadcrumb li {
     display: inline;
-    margin-right: 50px;
+  
   }
   
-  .breadcrumb li:last-child {
-    font-weight: bold;
-  }
   .breadcrumb li a {
-    color: white;
-    text-decoration: none;
+    color: black;
   }
   .breadcrumb li a:hover {
     color: white;
     text-decoration: underline;
-    background-color: #e74c3c;
-    border: 2px solid #e74c3c;
+    background-color: rgb(55, 0, 255);
+    border: 2px solid rgb(55, 0, 255);
     border-radius: 5px;
   }
   h1 {
@@ -30,4 +26,13 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 2em;
+  }
+  .breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 2rem;
+    content: "→";
+    color: black;
+  }
+  span {
+    color: rgb(55, 0, 255);
   }

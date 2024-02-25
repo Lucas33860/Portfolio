@@ -16,7 +16,7 @@ body {
     z-index: 9999;
   }
 header{
-    background-color: #161515;
+    background-color: rgb(236, 113, 210);
     height: 100px;
     width: 100%;
     position: fixed;
@@ -48,9 +48,8 @@ header ul li{
     padding: auto;
 }
 header ul li a:hover{
-    color: #e74c3c;
+    color: rgb(55, 0, 255);
     text-decoration: underline;
-    font-size: 24px;
 }
 header .logo{
     float: left;
@@ -65,7 +64,7 @@ header img{
 section{
     overflow: hidden;
     padding: 0 4.75rem;
-    margin-top: 10rem;  
+    padding: 10rem;  
 }
 section .presentation h1{
     font-size: 3.5rem;
@@ -101,24 +100,25 @@ section .presentation h2{
 }
 .button a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 10px 20px;
     border-radius: 10px;
 }
 .button a:hover{
-    background-color: #e74c3c;
-    border: 1px solid #e74c3c;
-    scale: 1.1;
+    background-color: rgb(55, 0, 255);
+    border: 1px solid rgb(55, 0, 255);
+    color: white;
 }
 .competences{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: black;
 }
 .competences h1{
     margin-bottom: 4rem;
@@ -147,7 +147,7 @@ section .presentation h2{
     padding-bottom: 128px;
 }
 .espace-small-bas{
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 }
 .projects{
     margin-top: 100px;
@@ -156,6 +156,7 @@ section .presentation h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: black;
 }
 .project img{
     width: 400px;
@@ -163,11 +164,16 @@ section .presentation h2{
     border: 1px solid black;
     border-radius: 25px;
 }
+.project img:hover{
+    scale : 1.1;
+    overflow:auto
+}
 .projet{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: black;
 }
 .scratch h1{
     text-align: center;
@@ -182,4 +188,35 @@ section .presentation h2{
     max-width: 100%;
     max-height: 200px;
     padding-bottom: 50px;
+}
+.color1{
+    background-color: white;
+    color: black;
+}
+.pink{
+    background-color: rgb(236, 113, 210);
+    color: black
+}
+.colorcomp{
+    color: black;
+}
+.CV{
+    text-align: center;
+    padding-top: 100px;
+}
+.CV h1{
+    font-size: 3.5rem;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+.CV img{
+    display: block;
+    margin: auto;
+    width: max-content;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    text-align: center;
 }
