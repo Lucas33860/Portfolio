@@ -203,7 +203,7 @@ section .presentation h2{
     color: black;
 }
 .pink{
-    background-color: rgb(236, 113, 210);
+    background-color: rgb(187, 49, 221);
     color: black
 }
 .colorcomp{
@@ -234,4 +234,14 @@ video{
     margin: auto;
     width: 50%;
     height: 100%;
+}
+.pro{
+    padding-bottom:  300px;
+}
+.contacts{
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    flex-direction: row;
 }

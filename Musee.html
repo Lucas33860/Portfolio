@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +16,11 @@
                     <img src="ressources/Lucas.jpg" alt="logo"></a>
                 </div>
                 <div class="home">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="index.html#competences">Compétences</a></li>
-                    <li><a href="index.html">Projets</a></li>
-                    <li><a href="index.html">CV</a></li>
-                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="../">Accueil</a></li>
+                    <li><a href="../#competences">Compétences</a></li>
+                    <li><a href="../#projets">Projets</a></li>
+                    <li><a href="../#cv">CV</a></li>
+                    <li><a href="../#contact">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -34,26 +33,29 @@
         <p>Lors de ce projet nous avons dû réaliser une refonte complète de la page d'accueil du site du musée
             d'Aquitaine. Pour cela nous avons dû dans un premier temps réalisé des maquettes sur Figma et ensuite
             développé en HTML et CSS le site.</p>
-        <img src="ressources/projets/Musée.png" alt="accueil musée">
-        <p>Nous avons mis en avant l'exposition du moment disponible dans le musée d'Aquitaine.</p>
-        <img src="ressources/projets/expo.png" alt="expo à la une ">
-        <p>Mais également toutes les expositions disponibles ainsi que l'agenda du musée</p>
-        <img src="ressources/projets/expo moment.png" alt="exposition du moment">
+        <p>Nous avons mis en avant l'exposition du moment disponible dans le musée d'Aquitaine, mais également toutes les expositions disponibles ainsi que l'agenda du musée</p>
         <p>Nous avons du rendre ce site accéssible pour tout le monde et sur tout type d'appareil notament sur
             Téléphone. Ce projet à été un véritable travail d'équipe qui nous a permis d'apprendre à utiliser Github et
-            Figma </p>
+            Figma. </p>
+        <div class="scratchimg">
+        <img src="ressources/projets/Musée.png" alt="accueil musée">
+        <img src="ressources/projets/expo.png" alt="expo à la une ">
+        </div>
+        <div class="scratchimg">
+        <img src="ressources/projets/expo moment.png" alt="exposition du moment">
         <img src="ressources/projets/agenda.png" alt="agenda musée">
+        </div>
         <div class="button">
             <a href="https://refonte-musee.netlify.app">Site Musée</a>
         </div>
-        <div class="breadcrumb">
-            <ul>
-                <li><a href="../">Accueil</a></li>
-                <li>&#x2794</li>
-                <li><a href="scratch.html">Musée d'Aquitaine</a></li>
-            </ul>
-        </div>
     </section>
 </body>
-
+<footer>
+    <nav aria-label="Breadcrumb" class="breadcrumb pro">
+      <ul>
+        <li><a href="../#projets">Accueil</a></li>
+        <li><span aria-current="page">Musée</span></li>
+      </ul>
+    </nav>
+  </footer>
 </html>
