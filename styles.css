@@ -203,7 +203,7 @@ section .presentation h2{
     color: black;
 }
 .pink{
-    background-color: rgb(187, 49, 221);
+    background-color: rgb(226, 180, 238);
     color: black
 }
 .colorcomp{
@@ -225,7 +225,7 @@ section .presentation h2{
     width: max-content;
 }
 footer{
-    background-color: rgb(255, 255, 255);
+    
     color:black;
     text-align: center;
 }
@@ -244,4 +244,49 @@ video{
     justify-content: center;
     gap: 800px;
     flex-direction: row;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 50px;
+    
+}
+footer a:hover{
+    scale: 1.1;
+}
+footer a img{
+    width: 100px;
+    height: 100px;
+}
+.reseaux{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.reseaux img{
+    width:100px;
+    height: 100px;
+}
+.reseaux img:hover{
+    scale: 1.1;
+}
+.reseaux h2{
+    margin-bottom: 20px;
+}
+footer .home {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .home li{
+    margin: 10px;
+}
+footer .home li a{
+    text-decoration: none;
+    color: black;
+}
+footer .home li a:hover{
+    color: rgb(55, 0, 255);
+    text-decoration: underline;
 }
