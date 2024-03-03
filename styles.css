@@ -159,7 +159,7 @@ section .presentation h2{
     color: black;
 }
 .project img{
-    width: 400px;
+    width: 350px;
     height: 200px;
     border: 1px solid black;
     border-radius: 25px;
@@ -308,5 +308,8 @@ footer .home li a:hover{
 }
 .copyright{
     text-align: center;
-
+}
+.blogart{
+    text-align: center;
+    margin-bottom: 20px;
 }
