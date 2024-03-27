@@ -314,7 +314,12 @@ footer .home li a:hover {
 }
 @media screen and (max-width: 768px) {
   .CV img {
-    width: 100%;
+    height: 500px;
+    width: 300px;
+    padding-bottom: 100px;
+  }
+  section {
+    padding: 0 2rem;
   }
   .contacts {
     gap: 50px;
