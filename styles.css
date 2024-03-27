@@ -320,6 +320,16 @@ footer .home li a:hover {
   }
   section {
     padding: 0 2rem;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+  .container {
+    max-width: 400px;
+    margin: auto;
+    height: fit-content;
+  }
+  .container .presentation {
+    padding-top: 8rem;
   }
   .contacts {
     gap: 50px;
@@ -477,7 +487,8 @@ footer .home li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
     color: black;
   }
   .scratch img {
