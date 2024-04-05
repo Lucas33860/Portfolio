@@ -1,130 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="system.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="carrousel.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="system.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="carrousel.css" />
     <script src="script.js" defer></script>
-    <meta name="description"
-        content="Portfolio de Lucas Juillat, étudiant en BUT MMI passionné de développement web et tout ce qui touche aux multimédias">
-</head>
-<header id="site-header">
+    <meta
+      name="description"
+      content="Portfolio de Lucas Juillat, étudiant en BUT MMI passionné de développement web et tout ce qui touche aux multimédias"
+    />
+  </head>
+  <header id="site-header">
     <nav>
-        <ul>
-            <div class="logo">
-                <a href="index.html"><img src="ressources/Lucas.jpg" alt="logo"></a>
-            </div>
-            <div class="home">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </div>
-        </ul>
+      <ul>
+        <div class="logo">
+          <a href="index.html"><img src="ressources/Lucas.jpg" alt="logo" /></a>
+        </div>
+        <div class="home">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<body id="site-body">
+  <body id="site-body">
     <section class="container color1">
-        <div class="presentation">
-            <img class="photo" src="ressources/Lucas.jpg" alt="Photo de moi">
-            <h1>Lucas Juillat</h1>
-            <h2>18 ans, étudiant en BUT MMI à l'IUT Bordeaux Montaigne</h2>
-        </div>
-        <div class="button">
-            <a
-                href="https://www.iut.u-bordeaux-montaigne.fr/formation/offre-de-formation/metiers-du-multimedia-et-de-l-internet/">En
-                savoir plus</a>
-        </div>
+      <div class="presentation">
+        <img class="photo" src="ressources/Lucas.jpg" alt="Photo de moi" />
+        <h1>Lucas Juillat</h1>
+        <h2>18 ans, étudiant en BUT MMI à l'IUT Bordeaux Montaigne</h2>
+      </div>
+      <div class="button">
+        <a
+          href="https://www.iut.u-bordeaux-montaigne.fr/formation/offre-de-formation/metiers-du-multimedia-et-de-l-internet/"
+          >En savoir plus</a
+        >
+      </div>
     </section>
     <section id="competences" class="container espace pink">
+      <div class="logo-flex">
+        <img
+          class="logo-competences"
+          src="ressources/html.png"
+          alt="logo html"
+        />
+        <img class="logo-competences" src="ressources/css.png" alt="logo css" />
+      </div>
+      <div class="competences">
+        <h1>Compétences</h1>
+        <p>
+          Pendant mes années de formation, que ce soit au Lycée Jaufré Rudel ou
+          à l'IUT Bordeaux Montaigne, j'ai pu acquérir de nombreuses compétences
+          dans le domaine du multimédia et du développement web. Au cours de ces
+          années, mes plus grandes compétences se sont développées dans le
+          domaine du développement web, notamment grâce aux projets réalisés
+          lors de mes cours et de mon apprentissage extérieur.
+        </p>
+        <div class="button">
+          <a href="competences.html">Mes compétences</a>
+        </div>
         <div class="logo-flex">
-            <img class="logo-competences" src="ressources/html.png" alt="logo html">
-            <img class="logo-competences" src="ressources/css.png" alt="logo css">
+          <img
+            class="logo-competences"
+            src="ressources/figma.png"
+            alt="logo f"
+          />
+          <img
+            class="logo-competences"
+            src="ressources/premiere-pro.png"
+            alt="logo premiere-pro"
+          />
         </div>
-        <div class="competences">
-            <h1>Compétences</h1>
-            <p>
-                Pendant mes années de formation, que ce soit au Lycée Jaufré Rudel ou à l'IUT Bordeaux Montaigne, j'ai
-                pu acquérir de nombreuses compétences dans le domaine du multimédia et du développement web. Au cours de
-                ces années, mes plus grandes compétences se sont développées dans le domaine du développement web,
-                notamment grâce aux projets réalisés lors de mes cours et de mon apprentissage extérieur.
-            </p>
-            <div class="button">
-                <a href="competences.html">Mes compétences</a>
-            </div>
-            <div class="logo-flex">
-                <img class="logo-competences" src="ressources/figma.png" alt="logo f">
-                <img class="logo-competences" src="ressources/premiere-pro.png" alt="logo premiere-pro">
-            </div>
-        </div>
+      </div>
     </section>
     <section id="projets">
-        <h1 class="projet espace-bas">Projets</h1>
-        <div class="project">
-            <div>
-                <h2 class="espace-small-bas">Scratch</h2>
-                <a href="scratch.html"> <img src="ressources/projets/Max catpone fin.png" alt="photo projet scratch"></a>
-            </div>
-            <div>
-                <h2 class="espace-small-bas">Refonte site Musée</h2>
-                <a href="Musee.html"> <img src="ressources/projets/Musée.png" alt="musee d'aquitaine"></a>
-            </div>
-            <div>
-                <h2 class="espace-small-bas">Motion Design</h2>
-                <a href="motion.html"> <img src="ressources/projets/Capture d'écran 2023-11-28 190639.png" alt="motion design"></a>
-            </div>
+      <h1 class="projet espace-bas">Projets</h1>
+      <div class="project">
+        <div>
+          <h2 class="espace-small-bas">Scratch</h2>
+          <a href="scratch.html">
+            <img
+              src="ressources/projets/Max catpone fin.png"
+              alt="photo projet scratch"
+          /></a>
         </div>
-        <div class="projects project">
-            <div>
-                <h2 class="espace-small-bas">Reboot 2023</h2>
-                <a href="reboot.html"> <img src="ressources/projets/logoreboot.png" alt="Reboot 2023"></a>
-            </div>
-            <div>
-                <h2 class="espace-small-bas">Son équipe basket</h2>
-                <a href="son.html"> <img src="ressources/projets/soundlab.png" alt="semaine son"></a>
-            </div>
-            <div>
-                <h2 class="espace-small-bas">Blog Art</h2>
-                <a href="blogart.html"> <img src="ressources/projets/blogart3.png" alt="BlogArt"></a>
-            </div>
+        <div>
+          <h2 class="espace-small-bas">Refonte site Musée</h2>
+          <a href="Musee.html">
+            <img src="ressources/projets/Musée.png" alt="musee d'aquitaine"
+          /></a>
         </div>
+        <div>
+          <h2 class="espace-small-bas">Motion Design</h2>
+          <a href="motion.html">
+            <img
+              src="ressources/projets/Capture d'écran 2023-11-28 190639.png"
+              alt="motion design"
+          /></a>
+        </div>
+      </div>
+      <div class="projects project">
+        <div>
+          <h2 class="espace-small-bas">Reboot 2023</h2>
+          <a href="reboot.html">
+            <img src="ressources/projets/logoreboot.png" alt="Reboot 2023"
+          /></a>
+        </div>
+        <div>
+          <h2 class="espace-small-bas">Son équipe basket</h2>
+          <a href="son.html">
+            <img src="ressources/projets/soundlab.png" alt="semaine son"
+          /></a>
+        </div>
+        <div>
+          <h2 class="espace-small-bas">Blog Art</h2>
+          <a href="blogart.html">
+            <img src="ressources/projets/blogart3.png" alt="BlogArt"
+          /></a>
+        </div>
+      </div>
     </section>
     <section id="cv" class="CV pink">
-        <h1 class="">Mon CV</h1>
-        <img src="ressources/CV.jpg" alt="CV Lucas Juillat">
+      <h1 class="">Mon CV</h1>
+      <img src="ressources/CV.jpg" alt="CV Lucas Juillat" />
     </section>
     <footer id="contact" class="black">
-        <h1>Où me contacter :</h1>
-    <div class="contacts">
-        <a class="padding" href="mailto:juillat.lucas@mail.com"><img src="ressources/enveloppe-de-courrier-electronique.png" alt=""></a>
-        <a class="padding" href="tel:+33608915328"> <img src="ressources/telephone.png" alt=""></a>
-    </div>
-    <div class="reseaux">
+      <h1>Où me contacter :</h1>
+      <div class="contacts">
+        <a class="padding" href="mailto:juillat.lucas@mail.com"
+          ><img src="ressources/enveloppe-de-courrier-electronique.png" alt=""
+        /></a>
+        <a class="padding" href="tel:+33608915328">
+          <img src="ressources/telephone.png" alt=""
+        /></a>
+      </div>
+      <div class="reseaux">
         <h2>LinkedIn</h2>
         <h2>GitHub</h2>
         <h2>Instagram</h2>
-    </div>
-    <div class="reseaux">
-        <a class="padding" href="https://www.linkedin.com/in/lucas-juillat-4a3472294/"><img src="ressources/linkedin.png" alt="linkedin"></a>
-        <a class="padding" href="https://github.com/Lucas33860"><img src="ressources/github.png" alt="github"></a>
-        <a class="padding" href="https://www.instagram.com/jui_lucas33/"><img src="ressources/instagram.png" alt="instagram"></a>
-    </div>
-    <div class="home">
+      </div>
+      <div class="reseaux">
+        <a
+          class="padding"
+          href="https://www.linkedin.com/in/lucas-juillat-4a3472294/"
+          ><img src="ressources/linkedin.png" alt="linkedin"
+        /></a>
+        <a class="padding" href="https://github.com/Lucas33860"
+          ><img src="ressources/github.png" alt="github"
+        /></a>
+        <a class="padding" href="https://www.instagram.com/jui_lucas33/"
+          ><img src="ressources/instagram.png" alt="instagram"
+        /></a>
+      </div>
+      <div class="home">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
-    </div>
-        <p class="copyright">©Lucas Juillat - 2024</p>
+      </div>
+      <p class="copyright">©Lucas Juillat - 2024</p>
     </footer>
-</body>
-
+  </body>
 </html>
