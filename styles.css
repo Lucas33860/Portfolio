@@ -491,11 +491,6 @@ footer .home li a:hover {
     border: 1px solid #f7f5fb;
     border-radius: 25px;
   }
-  .project img:hover {
-    scale: 1.1;
-    overflow: auto;
-    color: #f58a07;
-  }
   .projet {
     display: flex;
     justify-content: center;
