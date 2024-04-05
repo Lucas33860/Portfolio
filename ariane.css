@@ -12,10 +12,10 @@
   color: #f7f5fb;
 }
 .breadcrumb li a:hover {
-  color: white;
+  color: #f7f5fb;
   text-decoration: underline;
-  background-color: rgb(55, 0, 255);
-  border: 2px solid rgb(55, 0, 255);
+  background-color: #f58a07;
+  border: 2px solid #f58a07;
   border-radius: 5px;
 }
 h1 {
