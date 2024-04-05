@@ -1,38 +1,36 @@
 .breadcrumb {
-    padding: 10px;
-    font-size: 0.9em;
-    margin-top: 50px;
-  }
-  
-  .breadcrumb li {
-    display: inline;
-  
-  }
-  
-  .breadcrumb li a {
-    color: black;
-  }
-  .breadcrumb li a:hover {
-    color: white;
-    text-decoration: underline;
-    background-color: rgb(55, 0, 255);
-    border: 2px solid rgb(55, 0, 255);
-    border-radius: 5px;
-  }
-  h1 {
-    font-size: 2.5em;
-    font-family: 'Noto Serif KR', serif;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 2em;
-  }
-  .breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 2rem;
-    content: "→";
-    color: black;
-  }
-  span {
-    color: rgb(55, 0, 255);
-  }
-  
+  padding: 10px;
+  font-size: 0.9em;
+  margin-top: 50px;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li a {
+  color: #f7f5fb;
+}
+.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: rgb(55, 0, 255);
+  border: 2px solid rgb(55, 0, 255);
+  border-radius: 5px;
+}
+h1 {
+  font-size: 2.5em;
+  font-family: "Noto Serif KR", serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 2rem;
+  content: "→";
+  color: #f7f5fb;
+}
+span {
+  color: #f9ab55;
+}
