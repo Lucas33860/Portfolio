@@ -1,3 +1,3 @@
 # Portfolio
-Bonjour mon portfolio est disponible pour les utilsateurs à partir de votre ordinateur mais pour les personnes sur téléphone il y à encore pas mal de problème qui sont en cours de réglages.
+Bonjour mon portfolio est enfin disponible est appréciable sur toutes appareils que ce soit ordinateurs ou téléphones portable vous pourrez tous le visionner sans problème cependant je penses que certains problèmes auront encore lieu si vous êtes sur tablette ou autres appareils qui ne sont ni des ordinateurs ou des téléphones
 https://lucasjuillat.netlify.app
