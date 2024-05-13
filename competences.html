@@ -1,146 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="system.css">
-    <link rel="stylesheet" href="ariane.css">
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="system.css" />
+    <link rel="stylesheet" href="ariane.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="slider.js" defer></script>
     <script src=""></script>
     <title>Compétences</title>
-    <header id="site-header"> <!-- Header tout beau tout beau -->
-        <nav>
+    <header id="site-header">
+      <!-- Header tout beau tout beau -->
+      <nav>
+        <ul>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="ressources/Lucas.jpg" alt="logo"
+            /></a>
+          </div>
+          <div class="home">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#competences">Compétences</a></li>
+            <li><a href="index.html">Projets</a></li>
+            <li><a href="index.html">CV</a></li>
+            <li><a href="index.html">Contact</a></li>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
             <ul>
-                <div class="logo">
-                    <img src="ressources/Lucas.jpg" alt="logo"></a>
-                </div>
-                <div class="home">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="index.html#competences">Compétences</a></li>
-                    <li><a href="index.html">Projets</a></li>
-                    <li><a href="index.html">CV</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </div>
-                <div id="mySidenav" class="sidenav">
-                  <a id="closeBtn" href="#" class="close">&times;</a>
-                  <ul>
-                    <li><a href="../">Accueil</a></li>
-                    <li><a href="../#competences">Compétences</a></li>
-                    <li><a href="../#projets">Projets</a></li>
-                    <li><a href="../#cv">CV</a></li>
-                    <li><a href="../#contact">Contact</a></li>
-                  </ul>
-                </div>
-        
-                <a href="#" id="openBtn">
-                  <span class="burger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span>
-                </a>
-        
-                <script>
-                  var sidenav = document.getElementById("mySidenav");
-                  var openBtn = document.getElementById("openBtn");
-                  var closeBtn = document.getElementById("closeBtn");
-        
-                  openBtn.onclick = openNav;
-                  closeBtn.onclick = closeNav;
-        
-                  function openNav() {
-                    sidenav.classList.add("active");
-                  }
-        
-                  function closeNav() {
-                    sidenav.classList.remove("active");
-                  }
-                </script>
+              <li><a href="../">Accueil</a></li>
+              <li><a href="../#competences">Compétences</a></li>
+              <li><a href="../#projets">Projets</a></li>
+              <li><a href="../#cv">CV</a></li>
+              <li><a href="../#contact">Contact</a></li>
             </ul>
-        </nav>
+          </div>
+
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            function openNav() {
+              sidenav.classList.add("active");
+            }
+
+            function closeNav() {
+              sidenav.classList.remove("active");
+            }
+          </script>
+        </ul>
+      </nav>
     </header>
-</head>
-<body>
-<section class="colorcomp">
-  <h1>Compétences de développement et diverses</h1>
-    <div class="slide-container">
+  </head>
+  <body>
+    <section class="colorcomp">
+      <h1>Compétences de développement et diverses</h1>
+      <div class="slide-container">
         <div class="custom-slider fade">
           <div class="slide-index">1 / 10</div>
-          <img class="slide-img" src="ressources/html.png">
-          <div class="slide-text">HTML : Bonne maîtrise de cette compétence que j'utilise fréquemment</div>
+          <img class="slide-img" src="ressources/html.png" />
+          <div class="slide-text">
+            HTML : Bonne maîtrise de cette compétence que j'utilise fréquemment
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">2 / 10</div>
-          <img class="slide-img" src="ressources/css.png">
-          <div class="slide-text">CSS : Bonne maîtrise, utilisation fréquente également</div>
+          <img class="slide-img" src="ressources/css.png" />
+          <div class="slide-text">
+            CSS : Bonne maîtrise, utilisation fréquente également
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">3 / 10</div>
-          <img class="slide-img" src="ressources/js.png">
+          <img class="slide-img" src="ressources/js.png" />
           <div class="slide-text">JS : Connaissance de bases</div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">4 / 10</div>
-          <img class="slide-img" src="ressources/php.png">
+          <img class="slide-img" src="ressources/php.png" />
           <div class="slide-text">PHP : Maîtrise d'un bon nombre de bases</div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">5 / 10</div>
-          <img class="slide-img" src="ressources/sql.png">
-          <div class="slide-text">SQL : Maîtrise correcte, bonne compréhension du fonctionnement</div>
+          <img class="slide-img" src="ressources/sql.png" />
+          <div class="slide-text">
+            SQL : Maîtrise correcte, bonne compréhension du fonctionnement
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">6 / 10</div>
-          <img class="slide-img" src="ressources/figma.png">
-          <div class="slide-text">Figma : Bonne maîtrise de ce logiciel de maquettage</div>
+          <img class="slide-img" src="ressources/figma.png" />
+          <div class="slide-text">
+            Figma : Bonne maîtrise de ce logiciel de maquettage
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">7 / 10</div>
-          <img class="slide-img" src="ressources/premiere-pro.png">
-          <div class="slide-text">Premiere Pro : Capable de faire un montage simple</div>
+          <img class="slide-img" src="ressources/premiere-pro.png" />
+          <div class="slide-text">
+            Premiere Pro : Capable de faire un montage simple
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">8 / 10</div>
-          <img class="slide-img" src="ressources/AE.png">
-          <div class="slide-text">After Effects : Connaissance de bases, capable de faire un petit motion design</div>
+          <img class="slide-img" src="ressources/AE.png" />
+          <div class="slide-text">
+            After Effects : Connaissance de bases, capable de faire un petit
+            motion design
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">9 / 10</div>
-          <img class="slide-img" src="ressources/VSC.png">
-          <div class="slide-text">VSC : Très bonne maîtrise de cette application que j'utilise très régulièrement</div>
+          <img class="slide-img" src="ressources/VSC.png" />
+          <div class="slide-text">
+            VSC : Très bonne maîtrise de cette application que j'utilise très
+            régulièrement
+          </div>
         </div>
         <div class="custom-slider fade">
           <div class="slide-index">10 / 10</div>
-          <img class="slide-img" src="ressources/github.png">
-          <div class="slide-text">GitHub : Maîtrise correcte, utilisation fréquente et je connais et utilise plusieurs extensions</div>
+          <img class="slide-img" src="ressources/github.png" />
+          <div class="slide-text">
+            GitHub : Maîtrise correcte, utilisation fréquente et je connais et
+            utilise plusieurs extensions
+          </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
+      <br />
       <div class="slide-dot">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span> 
-        <span class="dot" onclick="currentSlide(7)"></span> 
-        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
         <span class="dot" onclick="currentSlide(9)"></span>
         <span class="dot" onclick="currentSlide(10)"></span>
       </div>
-</section>
-</body>
-<footer>
-  <nav aria-label="Breadcrumb" class="breadcrumb">
-    <ul>
-      <li><a href="../">Accueil</a></li>
-      <li><span aria-current="page">Compétences</span></li>
-    </ul>
-  </nav>
-</footer>
+    </section>
+  </body>
+  <footer>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ul>
+        <li><a href="../">Accueil</a></li>
+        <li><span aria-current="page">Compétences</span></li>
+      </ul>
+    </nav>
+  </footer>
 </html>

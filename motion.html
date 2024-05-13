@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="system.css">
-    <link rel="stylesheet" href="ariane.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="system.css" />
+    <link rel="stylesheet" href="ariane.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="slider.js" defer></script>
     <title>Musée d'Aquitaine</title>
-    <header id="site-header"> <!-- Header tout beau tout beau -->
-        <nav>
+    <header id="site-header">
+      <!-- Header tout beau tout beau -->
+      <nav>
+        <ul>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="ressources/Lucas.jpg" alt="logo"
+            /></a>
+          </div>
+          <div class="home">
+            <li><a href="../">Accueil</a></li>
+            <li><a href="../#competences">Compétences</a></li>
+            <li><a href="../#projets">Projets</a></li>
+            <li><a href="../#cv">CV</a></li>
+            <li><a href="../#contact">Contact</a></li>
+          </div>
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
             <ul>
-                <div class="logo">
-                    <img src="ressources/Lucas.jpg" alt="logo"></a>
-                </div>
-                <div class="home">
-                    <li><a href="../">Accueil</a></li>
-                    <li><a href="../#competences">Compétences</a></li>
-                    <li><a href="../#projets">Projets</a></li>
-                    <li><a href="../#cv">CV</a></li>
-                    <li><a href="../#contact">Contact</a></li>
-                </div>
-                <div id="mySidenav" class="sidenav">
-                    <a id="closeBtn" href="#" class="close">&times;</a>
-                    <ul>
-                      <li><a href="index.html">Accueil</a></li>
-                      <li><a href="#competences">Compétences</a></li>
-                      <li><a href="#projets">Projets</a></li>
-                      <li><a href="#cv">CV</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                    </ul>
-                  </div>
-          
-                  <a href="#" id="openBtn">
-                    <span class="burger-icon">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </a>
-          
-                  <script>
-                    var sidenav = document.getElementById("mySidenav");
-                    var openBtn = document.getElementById("openBtn");
-                    var closeBtn = document.getElementById("closeBtn");
-          
-                    openBtn.onclick = openNav;
-                    closeBtn.onclick = closeNav;
-          
-                    function openNav() {
-                      sidenav.classList.add("active");
-                    }
-          
-                    function closeNav() {
-                      sidenav.classList.remove("active");
-                    }
-                  </script>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#cv">CV</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-</head>
+          </div>
 
-<body>
-<section class="scratch">
-    <h1>Motion Design</h1>
-    <p>Voici notre Motion Design réalisé à partir de After Effects.</p>
-    <p>Ce Motion Design raconte la théorie de Scipio Sighele sur le "Crime de foule et les suggestions collectives".</p>
-    <video controls>
-        <source src="ressources/projets/Juillat_Laborde_MotionDesign (1).mp4" type="video/mp4">
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            function openNav() {
+              sidenav.classList.add("active");
+            }
+
+            function closeNav() {
+              sidenav.classList.remove("active");
+            }
+          </script>
+        </ul>
+      </nav>
+    </header>
+  </head>
+
+  <body>
+    <section class="scratch">
+      <h1>Motion Design</h1>
+      <p>Voici notre Motion Design réalisé à partir de After Effects.</p>
+      <p>
+        Ce Motion Design raconte la théorie de Scipio Sighele sur le "Crime de
+        foule et les suggestions collectives".
+      </p>
+      <video controls>
+        <source
+          src="ressources/projets/Juillat_Laborde_MotionDesign (1).mp4"
+          type="video/mp4"
+        />
         Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
-    </video>
-</section>
-</body>
-<footer>
+      </video>
+    </section>
+  </body>
+  <footer>
     <nav aria-label="Breadcrumb" class="breadcrumb pro">
       <ul>
         <li><a href="../#projets">Accueil</a></li>
