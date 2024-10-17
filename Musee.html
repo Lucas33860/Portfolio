@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="system.css" />
     <link rel="stylesheet" href="ariane.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <script src="slider.js" defer></script>
     <title>Musée d'Aquitaine</title>
     <header id="site-header">
-      <!-- Header tout beau tout beau -->
       <nav>
         <ul>
           <div class="logo">
@@ -22,7 +23,7 @@
             <li><a href="../">Accueil</a></li>
             <li><a href="../#competences">Compétences</a></li>
             <li><a href="../#projets">Projets</a></li>
-            <li><a href="../#cv">CV</a></li>
+
             <li><a href="../#contact">Contact</a></li>
           </div>
           <div id="mySidenav" class="sidenav">
@@ -31,7 +32,7 @@
               <li><a href="../">Accueil</a></li>
               <li><a href="../#competences">Compétences</a></li>
               <li><a href="../#projets">Projets</a></li>
-              <li><a href="../#cv">CV</a></li>
+  
               <li><a href="../#contact">Contact</a></li>
             </ul>
           </div>
@@ -86,19 +87,60 @@
         Figma.
       </p>
       <div class="scratchimg">
-        <img src="ressources/projets/Musée.png" alt="accueil musée" />
-        <img src="ressources/projets/expo.png" alt="expo à la une " />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/Musée.png"
+          alt="accueil musée"
+        />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/expo.png"
+          alt="expo à la une "
+        />
       </div>
       <div class="scratchimg">
         <img
+          class="scratchimgmoove"
           src="ressources/projets/expo moment.png"
           alt="exposition du moment"
         />
-        <img src="ressources/projets/agenda.png" alt="agenda musée" />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/agenda.png"
+          alt="agenda musée"
+        />
       </div>
       <div class="button">
         <a href="https://refonte-musee.netlify.app">Site Musée</a>
       </div>
+
+      <script>
+         document
+              .querySelectorAll(".scratchimgmoove")
+              .forEach(function (logo) {
+                logo.addEventListener("mouseenter", function () {
+                  gsap.to(logo, {
+                    duration: 1,
+                    scale: 1.2,
+                    y: -10,
+                    rotation: 0,
+                    ease: "bounce.out",
+                    overwrite: "auto",
+                  });
+                });
+                logo.addEventListener("mouseleave", function () {
+                  gsap.to(logo, {
+                    duration: 0.5,
+                    scale: 1,
+                    y: 0,
+                    rotation: 0,
+                    ease: "bounce.out",
+                    overwrite: "auto",
+                  });
+                });
+              });
+          </script>
+      </script>
     </section>
   </body>
   <footer>

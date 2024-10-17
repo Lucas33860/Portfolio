@@ -3,6 +3,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #ffffff;
+  color: #000000;
 }
 /* Définition d'un container pour gérer l'affichage */
 .container {
@@ -16,13 +18,14 @@ body {
   z-index: 9999;
 }
 header {
-  background-color: #084887;
+  background-color: #ffffff;
   height: 100px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   transition: top 0.3s;
+  border-bottom: 1px solid #000000;
 }
 #content {
   margin-top: 100px; /* Assurez-vous que le contenu ne soit pas masqué par l'en-tête fixe */
@@ -34,7 +37,7 @@ header {
   top: -100px; /* Ajustez cette valeur selon votre hauteur d'en-tête pour le masquer complètement */
 }
 a {
-  color: #f7f5fb;
+  color: #000000;
 }
 .home {
   display: flex;
@@ -51,7 +54,7 @@ header ul li {
   padding: auto;
 }
 header ul li a:hover {
-  color: #f58a07;
+  color: #007bff;
   text-decoration: underline;
 }
 header .logo {
@@ -61,7 +64,7 @@ header .logo {
 }
 header img {
   height: 80px;
-  border: 1px solid #f7f5fb;
+  border: 1px solid #000000;
   border-radius: 10px;
 }
 section {
@@ -76,7 +79,7 @@ section .presentation h1 {
   margin: 2rem 0;
 }
 section .presentation h2 {
-  font-size: 2, 5rem;
+  font-size: 2.5rem;
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
 }
@@ -84,7 +87,7 @@ section .presentation h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #f7f5fb;
+  border: 1px solid #000000;
   border-radius: 25px;
 }
 .presentation {
@@ -103,25 +106,25 @@ section .presentation h2 {
 }
 .button a {
   text-decoration: none;
-  color: #f7f5fb;
+  color: #000000;
   font-size: 20px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  border: 1px solid #f7f5fb;
+  border: 1px solid #000000;
   padding: 10px 20px;
   border-radius: 10px;
 }
 .button a:hover {
-  background-color: #f58a07;
-  border: 1px solid #f58a07;
-  color: #f7f5fb;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #ffffff;
 }
 .competences {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #f7f5fb;
+  color: #000000;
 }
 .competences h1 {
   margin-bottom: 4rem;
@@ -129,14 +132,16 @@ section .presentation h2 {
 .competences p {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 75%;
   font-size: 20px;
+  text-align: justify;
 }
+
 .logo-competences {
-  width: 10%;
+  width: 15%;
   margin-bottom: 50px;
 }
+
 .logo-flex {
   display: flex;
   justify-content: space-around;
@@ -159,12 +164,12 @@ section .presentation h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f7f5fb;
+  color: #000000;
 }
 .project img {
   width: 350px;
   height: 200px;
-  border: 1px solid #f7f5fb;
+  border: 1px solid #000000;
   border-radius: 25px;
 }
 .project img:hover {
@@ -176,16 +181,16 @@ section .presentation h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #f7f5fb;
+  color: #000000;
 }
 .scratch h1 {
   text-align: center;
-  color: #f7f5fb;
+  color: #000000;
 }
 .scratch p {
   text-align: center;
   padding-bottom: 10px;
-  color: #f7f5fb;
+  color: #000000;
 }
 .scratchimg {
   padding-top: 50px;
@@ -193,7 +198,7 @@ section .presentation h2 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  color: #f7f5fb;
+  color: #000000;
 }
 .scratch img {
   display: block;
@@ -202,14 +207,14 @@ section .presentation h2 {
   max-height: 200px;
 }
 .color1 {
-  color: #f7f5fb;
+  color: #000000;
 }
 .pink {
-  background-color: #909cc2;
-  color: #f7f5fb;
+  background-color: #ffffff;
+  color: #000000;
 }
 .colorcomp {
-  color: #f7f5fb;
+  color: #000000;
 }
 .CV {
   text-align: center;
@@ -227,7 +232,7 @@ section .presentation h2 {
   width: 500px;
 }
 footer {
-  color: #f7f5fb;
+  color: #000000;
   text-align: center;
 }
 video {
@@ -237,7 +242,7 @@ video {
   height: 100%;
 }
 .contacts {
-  color: #f7f5fb;
+  color: #000000;
   display: flex;
   justify-content: center;
   gap: 800px;
@@ -245,11 +250,11 @@ video {
 }
 footer a {
   text-decoration: none;
-  color: #f7f5fb;
+  color: #000000;
 }
 footer a:hover {
   scale: 1.1;
-  color: #f58a07;
+  color: #007bff;
 }
 footer a img {
   width: 100px;
@@ -281,10 +286,10 @@ footer .home li {
 }
 footer .home li a {
   text-decoration: none;
-  color: #f7f5fb;
+  color: #000000;
 }
 footer .home li a:hover {
-  color: #f58a07;
+  color: #007bff;
   text-decoration: underline;
 }
 .espacepara {
@@ -298,7 +303,7 @@ footer .home li a:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  color: #f7f5fb;
+  color: #000000;
 }
 .sons h2 {
   margin-bottom: 20px;
@@ -310,12 +315,12 @@ footer .home li a:hover {
 }
 .copyright {
   text-align: center;
-  color: #f7f5fb;
+  color: #000000;
 }
 .blogart {
   text-align: center;
   margin-bottom: 20px;
-  color: #f7f5fb;
+  color: #000000;
 }
 @media screen and (max-width: 768px) {
   .CV img {
@@ -324,7 +329,7 @@ footer .home li a:hover {
     padding-bottom: 100px;
   }
   html {
-    background-color: #084887;
+    background-color: #ffffff;
   }
   section {
     padding: 0 2rem;
@@ -357,7 +362,7 @@ footer .home li a:hover {
   }
   .sons {
     flex-direction: column;
-    color: #f7f5fb;
+    color: #000000;
   }
   .sons h2 {
     margin-bottom: 10px;
@@ -370,11 +375,11 @@ footer .home li a:hover {
   .copyright {
     font-size: 12px;
     padding-top: 50px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .blogart {
     font-size: 14px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .espacepara {
     margin-bottom: 50px;
@@ -392,75 +397,75 @@ footer .home li a:hover {
   }
   footer .home li a {
     font-size: 20px;
-    color: #f7f5fb;
+    color: #000000;
   }
   footer .home li a:hover {
-    color: #f58a07;
+    color: #007bff;
     text-decoration: none;
   }
   h1 {
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   h2 {
     font-size: 1.5rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   p {
     font-size: 1rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .presentation h1 {
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .presentation h2 {
     font-size: 1.5rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .button a {
     font-size: 16px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .competences h1 {
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .competences p {
     font-size: 16px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratch h1 {
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratch p {
     font-size: 1rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .CV h1 {
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .reseaux h2 {
     font-size: 1.5rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .blogart {
     font-size: 12px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .sons h2 {
     font-size: 1.5rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .sonsband {
     font-size: 1rem;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratchimg {
     padding-top: 25px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .logo-competences {
     width: 20%;
@@ -478,17 +483,17 @@ footer .home li a:hover {
   }
   header img {
     height: 50px;
-    border: 1px solid #f7f5fb;
+    border: 1px solid #000000;
     border-radius: 10px;
   }
   .projects {
     margin-top: 50px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .project img {
     width: 200px;
     height: 100px;
-    border: 1px solid #f7f5fb;
+    border: 1px solid #000000;
     border-radius: 25px;
   }
   .projet {
@@ -496,17 +501,17 @@ footer .home li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratch h1 {
     margin-top: 80px;
     text-align: center;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratch p {
     text-align: center;
     padding-bottom: 10px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratchimg {
     padding-top: 50px;
@@ -515,7 +520,7 @@ footer .home li a:hover {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .scratch img {
     display: block;
@@ -524,11 +529,11 @@ footer .home li a:hover {
     max-height: 200px;
   }
   .color1 {
-    color: #f7f5fb;
+    color: #000000;
   }
   .pink {
-    background-color: #909cc2;
-    color: #f7f5fb;
+    background-color: #ffffff;
+    color: #000000;
   }
   .logo-competences {
     width: 50%;
@@ -544,26 +549,26 @@ footer .home li a:hover {
     align-items: center;
     width: 100%;
     font-size: 16px;
-    color: #f7f5fb;
+    color: #000000;
   }
   .project {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    color: #f7f5fb;
+    color: #000000;
   }
   .project img {
     width: 350px;
     height: 200px;
-    border: 1px solid #f7f5fb;
+    border: 1px solid #000000;
     border-radius: 25px;
   }
   .project h2 {
     margin-top: 20px;
     text-align: center;
     font-size: 2rem;
-    color: #f7f5fb;
+    color: #000000;
   }
 }
 .sidenav {
@@ -573,9 +578,10 @@ footer .home li a:hover {
   z-index: 1;
   top: 0;
   left: -250px;
-  background-color: #084887;
+  background-color: #ffffff;
   padding-top: 60px;
   transition: left 0.5s ease;
+  border-right: 1px solid #000000;
 }
 
 .sidenav ul {
@@ -588,18 +594,18 @@ footer .home li a:hover {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #f7f5fb;
+  color: #000000;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f7f5fb;
+  color: #007bff;
 }
 
 .sidenav.active {
   left: 0;
-  background-color: #084887;
+  background-color: #ffffff;
 }
 .sidenav .close {
   position: absolute;
@@ -612,7 +618,7 @@ footer .home li a:hover {
   display: none;
   width: 35px;
   height: 5px;
-  background-color: #f7f5fb;
+  background-color: #000000;
   margin: 6px 0;
 }
 .burger-icon {
@@ -643,4 +649,74 @@ footer .home li a:hover {
   .burger-icon span {
     display: block;
   }
+}
+#cvImage {
+  cursor: pointer;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 30%; /* Adjusted width to ensure only 3 cards per row */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0.2, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  max-height: 250px; /* Maximum height for the images */
+  object-fit: contain; /* Ensures the entire image fits within the specified dimensions */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  text-align: center;
+  line-height: 4; /* Adjust line-height if needed */
+  font-size: 24px;
+}
+
+.card a:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.card a:active {
+  transform: translateY(0);
 }

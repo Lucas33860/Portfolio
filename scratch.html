@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="system.css" />
     <link rel="stylesheet" href="ariane.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="slider.js" defer></script>
     <title>Projet Scratch</title>
     <header id="site-header">
@@ -68,28 +69,96 @@
     <section class="scratch">
       <h1>Projet Scratch</h1>
       <p>
-        Voici un projet que j'ai réalisé en cours de programmation en première
-        année de BUT MMI. Il s'agit d'un jeu de plateforme réalisé sur Scratch.
+        Voici un projet que j'ai realisé en première année de BUT MMI. Il s'agit
+        d'un jeu de plateforme réalisé sur Scratch.
       </p>
       <p>
-        Notre jeu a une histoire unique, il a pour but de réaliser une enquête
-        en trouvant des indices dans 3 pièces différentes afin de résoudre une
-        enquête.
-      </p>
-      <p>
-        À la fin du jeu et une fois l'enquête résolue, le jeu nous révèle
-        l'identité du coupable.
+        Notre jeu à histoire unique a pour but de réaliser une enquête en
+        trouvant des indices dans 3 pièces différentes. À la fin du jeu et une
+        fois l'enquête résolue, le jeu nous révèle l'identité du coupable.
       </p>
       <p>
         Ce projet nous a permis de travailler en équipe et d'apprendre les bases
         de l'algorithmie.
       </p>
       <div class="scratchimg">
-        <img src="ressources/projets/logo jeu.png" alt="logo jeu INDICE" />
-        <img src="ressources/projets/intro scratch.png" alt="jeu intro" />
-        <img src="ressources/projets/Max catpone fin.png" alt="fin du jeu" />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/intro scratch.png"
+          alt="jeu intro"
+        />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/logo jeu.png"
+          alt="logo jeu INDICE"
+        />
+        <img
+          class="scratchimgmoove"
+          src="ressources/projets/Max catpone fin.png"
+          alt="fin du jeu"
+        />
       </div>
     </section>
+
+    <style>
+      .scratch {
+        margin-top: 100px;
+        font-family: Arial, sans-serif;
+        color: #007bff;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+      }
+
+      .scratch h1 {
+        font-size: 4em;
+        color: #007bff;
+        margin-bottom: 50px;
+        text-decoration: underline;
+      }
+
+      .scratch p {
+        font-size: 1.1em;
+        line-height: 0;
+        margin-bottom: 15px;
+      }
+
+      .scratchimg {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .scratchimg img {
+        max-width: 30%;
+        border-radius: 8px;
+      }
+    </style>
+
+    <script>
+      document.querySelectorAll(".scratchimgmoove").forEach(function (logo) {
+        logo.addEventListener("mouseenter", function () {
+          gsap.to(logo, {
+            duration: 1,
+            scale: 1.2,
+            y: -10,
+            rotation: 0,
+            ease: "bounce.out",
+            overwrite: "auto",
+          });
+        });
+        logo.addEventListener("mouseleave", function () {
+          gsap.to(logo, {
+            duration: 0.5,
+            scale: 1,
+            y: 0,
+            rotation: 0,
+            ease: "bounce.out",
+            overwrite: "auto",
+          });
+        });
+      });
+    </script>
   </body>
   <footer>
     <nav aria-label="Breadcrumb" class="breadcrumb">

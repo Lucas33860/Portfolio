@@ -25,7 +25,7 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="#competences">Compétences</a></li>
           <li><a href="#projets">Projets</a></li>
-          <li><a href="#cv">CV</a></li>
+
           <li><a href="#contact">Contact</a></li>
         </div>
         <div id="mySidenav" class="sidenav">
@@ -34,7 +34,7 @@
             <li><a href="index.html" class="sidenav-link">Accueil</a></li>
             <li><a href="#competences" class="sidenav-link">Compétences</a></li>
             <li><a href="#projets" class="sidenav-link">Projets</a></li>
-            <li><a href="#cv" class="sidenav-link">CV</a></li>
+
             <li><a href="#contact" class="sidenav-link">Contact</a></li>
           </ul>
         </div>
@@ -77,13 +77,10 @@
       <div class="presentation">
         <img class="photo" src="ressources/Lucas.jpg" alt="Photo de moi" />
         <h1>Lucas Juillat</h1>
-        <h2>19 ans, étudiant en BUT MMI à l'IUT Bordeaux Montaigne</h2>
-      </div>
-      <div class="button">
-        <a
-          href="https://www.iut.u-bordeaux-montaigne.fr/formation/offre-de-formation/metiers-du-multimedia-et-de-l-internet/"
-          >En savoir plus</a
-        >
+        <h2>19 ans, étudiant en BUT MMI à l'IUT Bordeaux Montaigne.</h2>
+        <h2>
+          Actuellement à la recherche d'un stage dans le développement web
+        </h2>
       </div>
     </section>
     <section id="competences" class="container espace pink">
@@ -98,12 +95,11 @@
       <div class="competences">
         <h1>Compétences</h1>
         <p>
-          Pendant mes années de formation, que ce soit au Lycée Jaufré Rudel ou
-          à l'IUT Bordeaux Montaigne, j'ai pu acquérir de nombreuses compétences
-          dans le domaine du multimédia et du développement web. Au cours de ces
-          années, mes plus grandes compétences se sont développées dans le
-          domaine du développement web, notamment grâce aux projets réalisés
-          lors de mes cours et de mon apprentissage extérieur.
+          Mes compétences en développement web sont principalement orientées sur
+          le front-end. J'ai des connaissances en HTML, CSS, JavaScript et PHP.
+          Mais j'ai également des bonnes bases en back-end avec le language SQL.
+          D'autres connaissances en motion design et en design graphique sont à
+          mon actif avec une connsaisance de la suite Adobe.
         </p>
         <div class="button">
           <a href="competences.html">Mes compétences</a>
@@ -111,67 +107,113 @@
         <div class="logo-flex">
           <img
             class="logo-competences"
-            src="ressources/figma.png"
-            alt="logo f"
+            src="ressources/php.png"
+            alt="logo PHP"
           />
           <img
             class="logo-competences"
-            src="ressources/premiere-pro.png"
-            alt="logo premiere-pro"
+            src="ressources/js.png"
+            alt="logo JavaScript"
           />
         </div>
       </div>
     </section>
-    <section id="projets">
+
+    <script>
+      document.querySelectorAll(".logo-competences").forEach(function (logo) {
+        logo.addEventListener("mouseenter", function () {
+          gsap.to(logo, {
+            duration: 1,
+            scale: 1.2,
+            y: -10,
+            rotation: 0,
+            ease: "bounce.out",
+            overwrite: "auto",
+          });
+        });
+        logo.addEventListener("mouseleave", function () {
+          gsap.to(logo, {
+            duration: 0.5,
+            scale: 1,
+            y: 0,
+            rotation: 0,
+            ease: "bounce.out",
+            overwrite: "auto",
+          });
+        });
+      });
+    </script>
+    <section id="projets" class="container espace pink">
       <h1 class="projet espace-bas">Projets</h1>
-      <div class="project">
-        <div>
-          <h2 class="espace-small-bas">Scratch</h2>
-          <a href="scratch.html">
-            <img
-              src="ressources/projets/Max catpone fin.png"
-              alt="photo projet scratch"
-          /></a>
+      <div class="project-cards">
+        <div class="card">
+          <img
+            src="ressources/projets/logo jeu.png"
+            alt="photo projet scratch"
+          />
+          <div class="card-content">
+            <h2>Scratch</h2>
+            <p>
+              Un projet de programmation visuelle utilisant Scratch pour créer
+              des animations et un jeu intéractif.
+            </p>
+            <a href="scratch.html" class="button">Voir le projet</a>
+          </div>
         </div>
-        <div>
-          <h2 class="espace-small-bas">Refonte site Musée</h2>
-          <a href="Musee.html">
-            <img src="ressources/projets/Musée.png" alt="musee d'aquitaine"
-          /></a>
+        <div class="card">
+          <img src="ressources/projets/Musée.png" alt="musee d'aquitaine" />
+          <div class="card-content">
+            <h2>Refonte site Musée</h2>
+            <p>
+              Refonte complète du site web du Musée d'Aquitaine en HTML et CSS.
+            </p>
+            <a href="Musee.html" class="button">Voir le projet</a>
+          </div>
         </div>
-        <div>
-          <h2 class="espace-small-bas">Motion Design</h2>
-          <a href="motion.html">
-            <img
-              src="ressources/projets/Capture d'écran 2023-11-28 190639.png"
-              alt="motion design"
-          /></a>
+        <div class="card">
+          <img
+            src="ressources/projets/Capture d'écran 2023-11-28 190639.png"
+            alt="motion design"
+          />
+          <div class="card-content">
+            <h2>Motion Design</h2>
+            <p>
+              Motion design pour présenter une théorie réalisé avec After
+              Effects.
+            </p>
+            <a href="motion.html" class="button">Voir le projet</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ressources/projets/logoreboot.png" alt="Reboot 2023" />
+          <div class="card-content">
+            <h2>Reboot 2023</h2>
+            <p>
+              Événement Reboot 2023 avec un projet innovant en développement web
+              en utilisant du HTML CSS et JS.
+            </p>
+            <a href="reboot.html" class="button">Voir le projet</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ressources/projets/soundlab.png" alt="semaine son" />
+          <div class="card-content">
+            <h2>Son équipe basket</h2>
+            <p>
+              Projet de création sonore pour une équipe de basket avec Bandlab
+            </p>
+            <a href="son.html" class="button">Voir le projet</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ressources/projets/blogart3.png" alt="BlogArt" />
+          <div class="card-content">
+            <h2>Blog Art</h2>
+            <p>développement d'un blog d'article en HTML, CSS, PHP et SQL</p>
+            <a href="blogart.html" class="button">Voir le projet</a>
+          </div>
         </div>
       </div>
-      <div class="projects project">
-        <div>
-          <h2 class="espace-small-bas">Reboot 2023</h2>
-          <a href="reboot.html">
-            <img src="ressources/projets/logoreboot.png" alt="Reboot 2023"
-          /></a>
-        </div>
-        <div>
-          <h2 class="espace-small-bas">Son équipe basket</h2>
-          <a href="son.html">
-            <img src="ressources/projets/soundlab.png" alt="semaine son"
-          /></a>
-        </div>
-        <div>
-          <h2 class="espace-small-bas">Blog Art</h2>
-          <a href="blogart.html">
-            <img src="ressources/projets/blogart3.png" alt="BlogArt"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <section id="cv" class="CV pink">
-      <h1>Mon CV</h1>
-      <img id="cvImage" src="ressources/CV.jpg" alt="CV Lucas Juillat" />
     </section>
 
     <!-- Modal for enlarged image -->
@@ -201,31 +243,15 @@
 
       // GSAP animations
       gsap.from(".presentation img", { duration: 1.5, opacity: 0, y: -50 });
-      gsap.from(".presentation h1", {
-        duration: 1.5,
-        opacity: 0,
-        y: 50,
-        delay: 0.5,
-      });
-      gsap.from(".presentation h2", {
-        duration: 1.5,
-        opacity: 0,
-        y: 50,
-        delay: 1,
-      });
-      gsap.from(".button a", {
-        duration: 1.5,
-        opacity: 0,
-        scale: 0.5,
-        delay: 1.5,
-      });
+      gsap.from(".presentation h1", { duration: 1.5, opacity: 0, y: 50 });
+      gsap.from(".presentation h2", { duration: 1.5, opacity: 0, y: 50 });
+      gsap.from(".button a", { duration: 1.5, opacity: 0, scale: 0.5 });
 
       gsap.from("#competences .logo-competences", {
         duration: 1,
         opacity: 0,
         scale: 0.5,
         stagger: 0.2,
-        delay: 2,
       });
 
       gsap.from("#projets .project div", {
@@ -233,34 +259,25 @@
         opacity: 0,
         y: 50,
         stagger: 0.3,
-        delay: 2.5,
       });
 
-      gsap.from("#cv h1", { duration: 1.5, opacity: 0, y: -50, delay: 3 });
-      gsap.from("#cv img", {
-        duration: 1.5,
-        opacity: 0,
-        scale: 0.5,
-        delay: 3.5,
-      });
+      gsap.from("#cv h1", { duration: 1.5, opacity: 0, y: -50 });
+      gsap.from("#cv img", { duration: 1.5, opacity: 0, scale: 0.5 });
 
-      gsap.from("#contact h1", { duration: 1.5, opacity: 0, y: -50, delay: 4 });
+      gsap.from("#contact h1", { duration: 1.5, opacity: 0, y: -50 });
       gsap.from("#contact .contacts a", {
         duration: 1,
         opacity: 0,
         scale: 0.5,
         stagger: 0.2,
-        delay: 4.5,
       });
       gsap.from("#contact .reseaux a", {
         duration: 1,
         opacity: 0,
         scale: 0.5,
         stagger: 0.2,
-        delay: 5,
       });
 
-      // Hover animations
       document.querySelectorAll(".home li a").forEach(function (link) {
         link.addEventListener("mouseenter", function () {
           gsap.to(link, { duration: 0.3, scale: 1.2 });
@@ -324,41 +341,93 @@
       }
     </style>
     <footer id="contact" class="black">
-      <h1>Où me contacter :</h1>
-      <div class="contacts">
-        <a class="padding" href="mailto:juillat.lucas@mail.com"
-          ><img src="ressources/enveloppe-de-courrier-electronique.png" alt=""
-        /></a>
-        <a class="padding" href="tel:+33608915328">
-          <img src="ressources/telephone.png" alt=""
-        /></a>
+      <h1>Me Contacter</h1>
+      <div class="footer-content">
+        <div class="contact-info">
+          <div class="contacts">
+            <a class="padding" href="mailto:juillat.lucas@gmail.com">
+              <img
+                src="ressources/enveloppe-de-courrier-electronique.png"
+                alt="Email"
+              />
+            </a>
+            <a class="padding" href="tel:+33608915328">
+              <img src="ressources/telephone.png" alt="Téléphone" />
+            </a>
+          </div>
+          <div class="reseaux">
+            <a
+              class="padding"
+              href="https://www.linkedin.com/in/lucas-juillat-4a3472294/"
+            >
+              <img src="ressources/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a class="padding" href="https://github.com/Lucas33860">
+              <img src="ressources/github.png" alt="GitHub" />
+            </a>
+            <a class="padding" href="https://www.instagram.com/jui_lucas33/">
+              <img src="ressources/instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="reseaux">
-        <h2>LinkedIn</h2>
-        <h2>GitHub</h2>
-        <h2>Instagram</h2>
-      </div>
-      <div class="reseaux">
-        <a
-          class="padding"
-          href="https://www.linkedin.com/in/lucas-juillat-4a3472294/"
-          ><img src="ressources/linkedin.png" alt="linkedin"
-        /></a>
-        <a class="padding" href="https://github.com/Lucas33860"
-          ><img src="ressources/github.png" alt="github"
-        /></a>
-        <a class="padding" href="https://www.instagram.com/jui_lucas33/"
-          ><img src="ressources/instagram.png" alt="instagram"
-        /></a>
-      </div>
-      <div class="home">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </div>
-      <p class="copyright">©Lucas Juillat - 2024</p>
     </footer>
+
+    <style>
+      .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #fff;
+        width: 100%;
+      }
+
+      .contact-info {
+        text-align: center;
+      }
+
+      .contacts,
+      .reseaux {
+        display: flex;
+        justify-content: center;
+        gap: 400px;
+      }
+
+      .contacts a,
+      .reseaux a {
+        display: inline-block;
+        transition: transform 0.3s;
+      }
+    </style>
+
+    <script>
+      // GSAP animations for footer
+      gsap.from("#contact h1, #contact h2", {
+        duration: 1,
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+      });
+      gsap.from("#contact .contacts a, #contact .reseaux a", {
+        duration: 1,
+        opacity: 0,
+        scale: 0.5,
+        stagger: 0.2,
+      });
+      gsap.from("#cv img", { duration: 1, opacity: 0, scale: 0.5 });
+
+      // Hover animations
+      document
+        .querySelectorAll("#contact .contacts a, #contact .reseaux a")
+        .forEach(function (link) {
+          link.addEventListener("mouseenter", function () {
+            gsap.to(link, { duration: 0.3, scale: 1.2 });
+          });
+          link.addEventListener("mouseleave", function () {
+            gsap.to(link, { duration: 0.3, scale: 1 });
+          });
+        });
+    </script>
   </body>
 </html>
