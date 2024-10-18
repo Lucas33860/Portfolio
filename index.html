@@ -120,28 +120,23 @@
     </section>
 
     <script>
-      document.querySelectorAll(".logo-competences").forEach(function (logo) {
-        logo.addEventListener("mouseenter", function () {
+      function animateLogos() {
+        document.querySelectorAll(".logo-competences").forEach(function (logo) {
           gsap.to(logo, {
             duration: 1,
             scale: 1.2,
             y: -10,
             rotation: 0,
             ease: "bounce.out",
-            overwrite: "auto",
+            yoyo: true,
+            repeat: -1,
+            repeatDelay: 1,
           });
         });
-        logo.addEventListener("mouseleave", function () {
-          gsap.to(logo, {
-            duration: 0.5,
-            scale: 1,
-            y: 0,
-            rotation: 0,
-            ease: "bounce.out",
-            overwrite: "auto",
-          });
-        });
-      });
+      }
+
+      // Call the function to start the animation
+      animateLogos();
     </script>
     <section id="projets" class="container espace pink">
       <h1 class="projet espace-bas">Projets</h1>
