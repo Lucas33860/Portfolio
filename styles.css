@@ -536,7 +536,6 @@ footer .home li a:hover {
     color: #000000;
   }
   .logo-competences {
-    width: 50%;
     margin-bottom: 50px;
     gap: 100px;
   }
@@ -719,4 +718,16 @@ footer .home li a:hover {
 
 .card a:active {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 45%; /* Two cards per row on medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* One card per row on small screens */
+  }
 }

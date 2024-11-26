@@ -369,6 +369,10 @@
     </footer>
 
     <style>
+      footer h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+      }
       .footer-content {
         display: flex;
         justify-content: center;
@@ -393,6 +397,28 @@
       .reseaux a {
         display: inline-block;
         transition: transform 0.3s;
+      }
+      @media screen and (max-width: 768px) {
+        .contacts,
+        .reseaux {
+          flex-direction: row; /* Change column to row */
+          gap: 100px; /* Increase the gap */
+        }
+
+        .contacts img,
+        .reseaux img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .contacts .reseaux {
+          gap: 50px; /* Increase the gap */
+        }
+
+        footer h1 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
       }
     </style>
 
